@@ -9,28 +9,28 @@ router.use(bodyParser.json());
 
 /* GET products listing. */
 router.get('/', function(req, res, next) {
-  var query = 'select * from products';
-  db.query(query, function(err, rows, fields){
-    if(err){
-      res.status(500).send({error: 'Some thing failed.'});
-    }
-    // res.render("index");
-    res.json(rows);
-  });
+  // var query = 'select * from products';
+  // db.query(query, function(err, rows, fields){
+  //   if(err){
+  //     res.status(500).send({error: 'Some thing failed.'});
+  //   }
+  //   // res.render("index");
+  //   res.json(rows);
+  // });
   // res.send('respond with a resource');
 });
 
 /*get method for fetch single product*/
 router.get('/:id', function(req, res, next) {
-  var id = req.params.id;
-  var query = `select * from products where id = ${id}` ;
-  db.query(query, function(err, row, fields){
-    if(err){
-      res.status(500).send({error: 'Some thing failed.'});
-    }
-    // res.render("index");
-    res.json(row[0]);
-  });
+  // var id = req.params.id;
+  // var query = `select * from products where id = ${id}` ;
+  // db.query(query, function(err, row, fields){
+  //   if(err){
+  //     res.status(500).send({error: 'Some thing failed.'});
+  //   }
+  //   // res.render("index");
+  //   res.json(row[0]);
+  // });
   // res.send('respond with a resource');
 });
 

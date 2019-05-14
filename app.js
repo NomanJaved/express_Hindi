@@ -44,15 +44,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-// products
-// and products/id 
-// ye chal rahay han just create wala ni chal raha
-
-
-/**
- * 
- * create wala kdr h ?
- * 
- */
-
 module.exports = app;
